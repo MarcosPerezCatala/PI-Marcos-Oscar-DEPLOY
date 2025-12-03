@@ -47,7 +47,7 @@ task('deploy:vendors', function () {
 });
 
 // Tarea para reiniciar php-fpm (necesario para la caché)
-task('reload:php-fpm', function () {
+task('reload:php-fpm', body: function () {
     // Comando que ya configuraste en sudoers (Asegura la versión de PHP: php8.3-fpm)
     run('sudo /etc/init.d/php8.3-fpm restart'); 
 })->desc('Reinicia el servei php-fpm per netejar OpCache');
