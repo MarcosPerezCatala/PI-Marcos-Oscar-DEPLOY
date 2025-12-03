@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'db699a50f2377bc3ad399dc03bb85ddeb53542c8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'db699a50f2377bc3ad399dc03bb85ddeb53542c8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -27,6 +27,15 @@
             'install_path' => __DIR__ . '/./pcre',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'deployer/deployer' => array(
+            'pretty_version' => 'v7.5.12',
+            'version' => '7.5.12.0',
+            'reference' => 'efc71dac9ccc86b3f9946e75d50cb106b775aae2',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../deployer/deployer',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'maennchen/zipstream-php' => array(
             'pretty_version' => '3.1.2',

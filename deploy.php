@@ -6,24 +6,21 @@ require 'recipe/common.php';
 
 // === CONFIGURACIÓN GLOBAL ===
 set('application', 'deployer-cipfpbatoi'); 
-set('repository', 'https://github.com/MarcosPerezCatala/PI-Marcos-Oscar-DEPLOY'); // << CAMBIAR AQUÍ
+set('repository', 'https://github.com/MarcosPerezCatala/PI-Marcos-Oscar-DEPLOY'); 
 
 // El número de versiones anteriores que se mantendrán en el servidor.
 set('keep_releases', 5);
 
 // === CONFIGURACIÓN DE HOST ===
-// Define la conexión al servidor remoto (Tu instancia AWS)
-host('3.235.29.169') 
+host('3.237.24.169') 
     ->set('remote_user', 'sa04-deployer')
-    ->set('identity_file', 'MarcosLaravel.pem') // << CAMBIAR AQUÍ: Nombre de tu clave SSH local
+    ->set('identity_file', 'MarcosLaravel.pem') 
     ->set('deploy_path', '/var/www/es-cipfpbatoi-deployer/html')
     // Asignar tty para el clonado de Git.
     ->set('git_tty', true)
     ->set('git_recursive', true);
 
 
-// === DIRECTORIOS Y ARCHIVOS COMPARTIDOS ===
-// Archivos que se mantendrán entre versiones (ej. configuración y credenciales)
 set('shared_files', [
     'backend/includes/json_connect.php' 
 ]);
